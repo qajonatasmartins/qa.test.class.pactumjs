@@ -1,0 +1,16 @@
+{
+  "name": "qa.test.class.pactumjs",
+  "version": "1.0.0",
+  "description": "Apresentação do test.class \"Testes automatizados de API com Pactum JS\"",
+  "main": "index.js",
+  "repository": "https://github.com/qajonatasmartins/qa.test.class.pactumjs",
+  "author": "Jonatas Faria @QAJONATASMARTINS <jonatas1503@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "pactum": "^3.6.3"
+  },
+  "scripts": {
+    "api_testing": "mocha ./APITesting/example01.js"
+  }
+}
