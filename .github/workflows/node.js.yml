@@ -3,20 +3,20 @@ name: Pactum JS Test
 on: [push, pull_request]
 
 jobs:
-  pactumTest:
+  testClassPactumJs:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Use Node.js
+    - name: Setando o Node.js versão 20
       uses: actions/setup-node@v2
       with:
         node-version: '20.x'
 
-    - name: Install dependencies
+    - name: Instalando as dependências do projeto
       run: npm install
 
-    - name: Run Pactum JS tests
+    - name: Executando os testes e2e com Pactum JS
       run: npm run e2e
