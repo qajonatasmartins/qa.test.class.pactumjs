@@ -9,7 +9,7 @@ describe(produtcName, () => {
 
         user = await _spec()
             .name('Cadastrar usuário')
-            .post('/usuarios')
+            .post('$M{environments.serverest}/usuarios')
             .withHeaders({
                 'accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ describe(produtcName, () => {
 
         await _spec()
             .name('Alterar usuário')
-            .put(`/usuarios/${user.json._id}`)
+            .put(`$M{environments.serverest}/usuarios/${user.json._id}`)
             .withBody({
                 '@DATA:TEMPLATE@': 'changeUser',
             })

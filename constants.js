@@ -4,7 +4,6 @@ const { faker } = require('@faker-js/faker')
 const _spec = spec
 const _e2e = e2e
 
-request.setBaseUrl("https://serverest.dev")
 request.setDefaultTimeout(50000)
 
 handler.addDataFuncHandler('getName', () => {

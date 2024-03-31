@@ -1,0 +1,7 @@
+{
+  "environments": {
+    "serverest": "https://serverest.dev",
+    "reqres": "https://reqres.in",
+    "jsonplaceholder": "http://jsonplaceholder.typicode.com"
+  }
+}

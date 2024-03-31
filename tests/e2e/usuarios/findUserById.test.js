@@ -15,7 +15,7 @@ describe(produtcName, () => {
 
         let { json } = await _spec()
             .name('Cadastrar usuário')
-            .post('/usuarios')
+            .post('$M{environments.serverest}/usuarios')
             .withHeaders({
                 'accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ describe(produtcName, () => {
 
         await _spec()
             .name('Buscar usuário por id')
-            .get(`/usuarios/${json._id}`)
+            .get(`$M{environments.serverest}/usuarios/${json._id}`)
             .expectStatus(200)
             .expectJsonLike({
                 nome: user.nome,

@@ -6,7 +6,7 @@ describe(produtcName, () => {
     it('Cadastrar usuário no Serverest', async () => {
         await _spec()
             .name('Cadastrar usuário')
-            .post('/usuarios')
+            .post('$M{environments.serverest}/usuarios')
             .withHeaders({
                 'accept': 'application/json',
                 'Content-Type': 'application/json'

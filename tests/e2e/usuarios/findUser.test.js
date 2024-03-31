@@ -9,7 +9,7 @@ describe(produtcName, () => {
 
         user = await _spec()
             .name('Cadastrar usuário')
-            .post('/usuarios')
+            .post('$M{environments.serverest}/usuarios')
             .withHeaders({
                 'accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ describe(produtcName, () => {
 
         await _spec()
             .name('Buscar todos usuário')
-            .get('/usuarios')
+            .get('$M{environments.serverest}/usuarios')
             .withQueryParams({
                 '_id': `${user}`,
                 'nome': ``,

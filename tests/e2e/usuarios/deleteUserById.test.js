@@ -9,7 +9,7 @@ describe(produtcName, () => {
 
         user = await _spec()
             .name('Cadastrar usuário')
-            .post('/usuarios')
+            .post('$M{environments.serverest}/usuarios')
             .withHeaders({
                 'accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ describe(produtcName, () => {
 
         await _spec()
             .name('Deletar usuário por id')
-            .delete(`/usuarios/${user.json._id}`)
+            .delete(`$M{environments.serverest}/usuarios/${user.json._id}`)
             .expectStatus(200)
             .expectJsonLike({
                 message: "Registro excluído com sucesso"

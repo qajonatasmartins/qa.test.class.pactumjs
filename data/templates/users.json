@@ -10,5 +10,27 @@
     "email": "$F{getEmail}",
     "password": "$F{getPassword}",
     "administrador": "false"
+  },
+  "dataFunction": {
+    "name": "$F{getName}",
+    "job": "leader"
+  },
+  "dataMap": {
+    "name": "$M{other.name}",
+    "job": "$M{other.job}",
+    "address": {
+      "@DATA:TEMPLATE@": "address"
+    }
+  },
+  "dataTemplate": {
+    "name": "morpheus",
+    "job": "leader"
+  },
+  "dataTemplateRemove": {
+    "name": "jonatas",
+    "job": "leader",
+    "address": {
+      "@DATA:TEMPLATE@": "address"
+    }
   }
 }
