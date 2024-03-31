@@ -1,9 +1,0 @@
-node_modules
-package-lock.json
-report
-allure-results
-allure-report
-mochawesome-report/**.html
-mochawesome-report/**.json
-mochawesome-report/assets/**.css
-**/yarn.lock
