@@ -1,0 +1,14 @@
+{
+  "newUser": {
+    "nome": "$F{getName}",
+    "email": "$F{getEmail}",
+    "password": "$F{getPassword}",
+    "administrador": "true"
+  },
+  "changeUser": {
+    "nome": "$F{getName}",
+    "email": "$F{getEmail}",
+    "password": "$F{getPassword}",
+    "administrador": "false"
+  }
+}
