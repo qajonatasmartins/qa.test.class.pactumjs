@@ -16,8 +16,8 @@
     "rimraf": "^5.0.1"
   },
   "scripts": {
-    "all": "mocha ./tests/**/**/**/**.test.js --reporter mochawesome --require mochawesome/register",
-    "all2": "npx mocha ./tests/**/**/**/**.test.js --reporter allure-mocha",
+    "all-mochawesome": "mocha ./tests/**/**/**/**.test.js --reporter mochawesome --require mochawesome/register",
+    "all-allure": "npx mocha ./tests/**/**/**/**.test.js --reporter allure-mocha",
     "simple": "mocha ./tests/simpleTest/**/**.test.js --reporter mochawesome --require mochawesome/register",
     "contract": "mocha ./tests/contract/**/**.test.js --reporter mochawesome --require mochawesome/register",
     "e2e": "mocha ./tests/e2e/**/**.test.js --reporter mochawesome --require mochawesome/register",
