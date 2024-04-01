@@ -2,7 +2,7 @@ module.exports = {
     reporter: 'node_modules/mochawesome',
     'reporter-option': [
         'json=true', 'reportDir=report',
-        'reportFilename=api-test', 'autoOpen=true', /* para abrir o relatório do mochawesome altere para 'true' */
+        'reportFilename=api-test', 'autoOpen=false', /* para abrir o relatório do mochawesome altere para 'true' */
         'reportPageTitle=TESTCLASS', 'reportTitle=TestClass',
         'charts=true'
     ],

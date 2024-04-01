@@ -1,8 +1,13 @@
-const { stash, handler, e2e, spec, request } = require("pactum")
+const { stash, handler, e2e, spec, request, flow, reporter } = require("pactum")
 const { faker } = require('@faker-js/faker')
+const pf = require('pactum-flow-plugin');
 
 const _spec = spec
+const _flow = flow
+const _reporter = reporter
+const _pf = pf
 const _e2e = e2e
+const version = `1.0.6`
 
 request.setDefaultTimeout(50000)
 
@@ -22,6 +27,6 @@ handler.addDataFuncHandler('getPassword', () => {
 stash.loadData("./data")
 
 module.exports = {
-    _spec, _e2e
+    _spec, _e2e, _flow, _reporter, _pf, version
 }
 
