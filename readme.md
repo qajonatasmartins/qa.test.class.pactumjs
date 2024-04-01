@@ -203,3 +203,7 @@ it('should return all posts and first post should have comments', async () => {
     .expectStatus(200)
 })
 ```
+
+## Comando para usar no codespace do github
+
+- [how-preview-a-html-file-github-codespaces](https://stackoverflow.com/questions/74452866/how-preview-a-html-file-github-codespaces)

@@ -1,7 +1,7 @@
 const { faker } = require('@faker-js/faker')
 const { _spec } = require('../../../constants')
 const { produtcName } = require('../../../data/productName.data')
-
+const { allure } = require("allure-mocha/runtime");
 describe(produtcName, () => {
 
     const user = {
@@ -12,7 +12,9 @@ describe(produtcName, () => {
     }
 
     it('Buscar usuário por {id} no Serverest', async () => {
-
+        allure.epic("Usuários");
+        allure.feature("Pesquisa de usuário");
+        allure.story("Pesquisar usuário por ID");
         let { json } = await _spec()
             .name('Cadastrar usuário')
             .post('$M{environments.serverest}/usuarios')

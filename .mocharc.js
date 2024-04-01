@@ -16,3 +16,11 @@ module.exports = {
     exit: true,
     'inline-diffs': true
 }
+
+module.exports = {
+    parallel: false,
+    reporter: "allure-mocha",
+    reporterOptions: {
+        resultsDir: "allure-results",
+    },
+};
